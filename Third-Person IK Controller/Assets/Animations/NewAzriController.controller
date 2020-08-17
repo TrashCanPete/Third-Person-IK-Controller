@@ -20,7 +20,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: d7e64fafcc9003f4c90aeef93e68084d,
       type: 3}
-    m_Threshold: 0.25
+    m_Threshold: 0.125
     m_Position: {x: 0, y: 0.5}
     m_TimeScale: 0.5
     m_CycleOffset: 0
@@ -29,37 +29,73 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: cd1c30007acc0b6428cdf727df928391,
       type: 3}
-    m_Threshold: 0.5
+    m_Threshold: 0.25
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 1eac89408b4723b41afdecbb07c57d2f,
+    m_Motion: {fileID: -203655887218126122, guid: a70c31a84a34462458c4272649b35009,
       type: 3}
-    m_Threshold: 0.75
+    m_Threshold: 0.375
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: e66656fa22fa3e144b5b8d609640ba74,
+    m_Motion: {fileID: -203655887218126122, guid: 3a00a2a3d8e57024991a6cf8c18fd210,
       type: 3}
-    m_Threshold: 1
+    m_Threshold: 0.5
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Blend X
-  m_BlendParameterY: Blend Y
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 508213ade38a8d240b3ea3abe175546b,
+      type: 3}
+    m_Threshold: 0.625
+    m_Position: {x: -0.5, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend X
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: f0321c44ecfac244190f7d21b469d308,
+      type: 3}
+    m_Threshold: 0.75
+    m_Position: {x: 0.5, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend X
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 02ced09bd92d72045a410c5a9a35d344,
+      type: 3}
+    m_Threshold: 0.875
+    m_Position: {x: 0, y: -1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend X
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -203655887218126122, guid: 108a64b64c148024c9dd3859f5c66d23,
+      type: 3}
+    m_Threshold: 1
+    m_Position: {x: 0, y: -0.5}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Blend X
+    m_Mirror: 0
+  m_BlendParameter: VelX
+  m_BlendParameterY: VelY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
-  m_BlendType: 1
+  m_BlendType: 2
 --- !u!1107 &-2999477358580824357
 AnimatorStateMachine:
   serializedVersion: 5
@@ -91,18 +127,18 @@ AnimatorController:
   m_Name: NewAzriController
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Blend X
+  - m_Name: VelX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: Blend Y
+    m_Controller: {fileID: 9100000}
+  - m_Name: VelY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -110,7 +146,7 @@ AnimatorController:
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
-    m_BlendingMode: 1
+    m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_DefaultWeight: 0
     m_IKPass: 0
