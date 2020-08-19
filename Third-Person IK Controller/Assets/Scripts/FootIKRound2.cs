@@ -35,7 +35,7 @@ public class FootIKRound2 : MonoBehaviour
             //Left Foot
             RaycastHit hit;
             Ray ray = new Ray(anim.GetIKPosition(AvatarIKGoal.LeftFoot) + Vector3.up, Vector3.down);
-            if (Physics.Raycast(ray, out hit, DistanceToGround + 1f, layerMask))
+            if (Physics.Raycast(ray, out hit, DistanceToGround +1f, layerMask))
             {
                 if (hit.transform.tag == "Walkable")
                 {
@@ -50,7 +50,7 @@ public class FootIKRound2 : MonoBehaviour
 
             //Right Foot
              
-             ray = new Ray(anim.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up, Vector3.down);
+            ray = new Ray(anim.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up, Vector3.down);
             if (Physics.Raycast(ray, out hit, DistanceToGround + 1f, layerMask))
             {
                 if (hit.transform.tag == "Walkable")
@@ -59,10 +59,9 @@ public class FootIKRound2 : MonoBehaviour
                     footPosition.y += DistanceToGround;
                     anim.SetIKPosition(AvatarIKGoal.RightFoot, footPosition);
                     Vector3 forward = Vector3.ProjectOnPlane(transform.forward, hit.normal);
-                    anim.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(forward, hit.normal));
+                    anim.SetIKRotation(AvatarIKGoal.RightFoot, Quaternion.LookRotation(forward, hit.normal));
                 }
             }
         }
     }
-
 }
