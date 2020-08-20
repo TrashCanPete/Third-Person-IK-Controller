@@ -24,6 +24,56 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: AZRI_sword_mat
     second: {fileID: 2100000, guid: 6c97e9abb4d140941b794aff9c079d6d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Body_Albedo
+    second: {fileID: 2800000, guid: 5f7e4d168144cf742b5eece1b05fe8c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Body_Normal
+    second: {fileID: 2800000, guid: 6148114b4b872484e84b84fabbfeb9d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Body_Spec
+    second: {fileID: 2800000, guid: b38057cdf7c5d3943a5ec2d08a06d774, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Head_Albedo
+    second: {fileID: 2800000, guid: 31c2983ec353b9a47a2101cf0e5541f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Head_Emissive
+    second: {fileID: 2800000, guid: 8444530b152c73d4998aa436caddede9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Head_Normal
+    second: {fileID: 2800000, guid: 645cfb45df1a4f34488f76a803a25441, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azri_Head_Spec
+    second: {fileID: 2800000, guid: 95bc1478be59cef468751d7124c56ca6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sword_albedo
+    second: {fileID: 2800000, guid: e215c03dad536484e93ce52fd84975f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sword_normal
+    second: {fileID: 2800000, guid: 563e98d0467e71440adb040b1054b789, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sword_spec
+    second: {fileID: 2800000, guid: 9c1be3b6612556341861c16bb8d5c7f0, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

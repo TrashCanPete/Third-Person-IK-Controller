@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AZRI_head_material
+  m_Name: AZRI_head_material 1
   m_Shader: {fileID: -6465566751694194690, guid: 7ff1f2e520df1054e9d34ed056b34138,
     type: 3}
   m_ShaderKeywords: _EMISSION _GLOSSINESS_FROM_BASE_ALPHA _NORMALMAP _SPECULAR_COLOR
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_2D28EAD5:
-        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Texture: {fileID: 2800000, guid: e2013f69a4685a64ba84a82faa368092, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_33DBE3F3:
@@ -73,8 +73,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_927FEE1C: 7
-    - Vector1_BE24949: -1000
+    - Vector1_927FEE1C: -8.7
+    - Vector1_BE24949: -14
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -103,8 +103,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - Color_21570747: {r: 1, g: 0.6764335, b: 0.3254717, a: 0}
-    - Vector2_CF6B6B6C: {r: 73, g: -235, b: 0, a: 0}
+    - Color_21570747: {r: 1, g: 0.7108776, b: 0.3176471, a: 0}
+    - Vector2_CF6B6B6C: {r: 2066.86, g: -7245.6, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
